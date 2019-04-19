@@ -1,0 +1,42 @@
+
+
+Thu Jan 17 17:33:16 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.19.8-041908-generic (#201812080831 SMP Sat Dec 8 13:34:18 UTC 2018) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       1953525168 sectors
+/dev/sda: user_max   1953525168 sectors
+/dev/sda: native_max 1953525168 sectors
+/dev/sda: dco        1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - ST1000LM035-1RK172, S/N:WL1084JZ, FW:LCM2
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 1000 GB / 931 GiB - ST1000LM035-1RK172
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1953525167 (expected 1953525167)
+hdr_lba_start=34
+hdr_lba_end=1953525134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 2 P MS Reserved               534528     567295      32768 [Microsoft reserved partition]
+ 1 P EFI System                  2048     534527     532480 [EFI system partition]
+ 2 P MS Reserved               534528     567295      32768 [Microsoft reserved partition]
+ 3 P Linux Swap                567296  588290047  587722752
+ 4 P Unknown                588290048 1953523711 1365233664
+Incomplete image created.
+
+TestDisk exited normally.

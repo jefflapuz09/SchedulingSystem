@@ -84,14 +84,9 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
                             </td>
                             <td>
                                 <select class="form-control select2" id="program1" name="program_code[]">
-                                    <option>BSIT</option>
-                                    <option>BSBA MM</option>
-                                    <option>BSED </option>
-                                    <option>BSCA</option>
-                                    <option>BSA</option>
-                                    <option>BSED MATH</option>
-                                    <option>BSED PE</option>
-                                    <option>BSBA HRDM</option>
+                                    @foreach($programs as $program)
+                                    <option value="{{$program->program_code}}">{{$program->program_code}}</option>
+                                    @endforeach
                                 </select>
                             </td>
                             <td><input type="text" class="form-control" name="course_code[]" id="code1"></td>

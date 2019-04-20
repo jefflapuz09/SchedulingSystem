@@ -56,7 +56,7 @@ if(Auth::user()->is_first_login == 1){
     <div class="row">
         <form class="form-horizontal" method='post' action='{{route('admin.updateinstructor',['id'=>$user->id])}}'>
             <div class="col-md-12">
-                <div class="box box-primary">
+                <div class="box box-default">
                     <div class="box-header">
                         <h3 class="box-title"><b>Personal Information</b></h3>
                     </div>

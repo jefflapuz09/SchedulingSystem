@@ -1,4 +1,4 @@
-<div class="box box-primary">
+<div class="box box-default">
     <div class="box-header">
         <h3 class="box-title">{{$program->program_name}}</h3>
         <div class="box-tools pull-right">

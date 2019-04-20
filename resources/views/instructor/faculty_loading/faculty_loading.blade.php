@@ -24,7 +24,7 @@ $tabular_schedules = \App\room_schedules::distinct()->
 <div class="container-fluid" style="margin-top:20px;">
     <div class="row">
         <div class="col-sm-3">
-            <div class="box box-danger">
+            <div class="box box-default">
                 <div class="box-body no-padding">
                     <table class="table table-borderless table-condensed">
                         <tr>

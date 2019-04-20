@@ -19,7 +19,7 @@ class FacultyLoadingAjax extends Controller
         if(Request::ajax()){
             $offering_id = Input::get('offering_id');
             $schedules = \App\room_schedules::where('offering_id',$offering_id)
-                    ->where('instructor',Auth::user()->id)->get();
+                    ->where('instructor',Auth::user()->id)->get()->unique('offering_id');
             
             return view('instructor.faculty_loading.ajax.get_offer_load',compact('schedules','offering_id'));
         }

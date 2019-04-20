@@ -1,5 +1,5 @@
 @if(count($schedules)>0)
-<div class="box box-danger">
+<div class="box box-default">
     <div class="box-header">
         <h5 class="box-title">Search Results</h5>
         <div class="box-tools pull-right">

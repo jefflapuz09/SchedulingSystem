@@ -36,7 +36,7 @@ if(Auth::user()->is_first_login == 1){
 
 
 <div class="container-fluid" style="margin-top: 15px;">
-    <div class="box box-danger">
+    <div class="box box-default">
         <div class="box-header">
             <h5 class="box-title">Search by Instructor</h5>
         </div>

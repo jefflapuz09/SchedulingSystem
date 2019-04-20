@@ -29,7 +29,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="skin-red sidebar-mini">
+<body class="skin-black sidebar-mini">
 <div id="app">
     <div class="wrapper">
 

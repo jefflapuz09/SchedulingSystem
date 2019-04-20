@@ -18,7 +18,7 @@ class CreateCtrSectionsTable extends Migration
             $table->string('program_code');
             $table->string('level');
             $table->string('section_name');
-            $table->integer('is_active');
+            $table->integer('is_active')->default(1);
             $table->timestamps();
         });
     }

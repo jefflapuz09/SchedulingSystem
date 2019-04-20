@@ -87,13 +87,12 @@
         <ul class="treeview-menu">
                 <li><a href="/admin/instructor/instructor_reports"><i class="fa fa-circle-o"></i> <span>Instructor Reports</span></a></li>
                 <li><a href="{{url('/admin/reports/rooms_occupied')}}"><i class="fa fa-circle-o"></i> <span>Rooms Occupied</span></a></li>
-                <li><a href="{{url('/admin/reports/rooms_occupied')}}"><i class="fa fa-circle-o"></i> <span>System Manual</span></a></li>                
                 </ul> 
                 </li>
                          
                 
         <?php $notifications = \App\LoadNotification::where('is_trash',0)->get();?>
-                <li class="active"><a href="{{ url('/admin/notification') }}"><i class='fa fa-bell-o '></i> <span>Notifications</span> @if(count($notifications)>0)<label class="label label-warning text-warning"><i class="">{{$notifications->count()}}</i></label> @endif </a></li>
+                <li class=""><a href="{{ url('/admin/notification') }}"><i class='fa fa-bell-o '></i> <span>Notifications</span> @if(count($notifications)>0)<label class="label label-warning text-warning"><i class="">{{$notifications->count()}}</i></label> @endif </a></li>
                 <li class=""><a href="{{ url('/account/change_password') }}"><i class='fa fa-lock '></i> <span>Change Password</span></a></li>
 
     <!--<li><a href="/admin/add_curriculum"><i class='fa fa-folder'></i> <span>Add Curriculum</span></a></li>-->

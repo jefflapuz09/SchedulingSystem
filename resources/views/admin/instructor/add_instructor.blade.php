@@ -51,11 +51,19 @@ if(Auth::user()->is_first_login == 1){
         <li class="active">Add new instructor</li>
       </ol>
 </section>
+@if(Session::has('success'))
+<div class='col-sm-12'>
+    <div class='callout callout-success'>
+        {{Session::get('success')}}
+    </div>
+</div>
+@endif
+
 <section class="content">
     <div class="row">
         <form class="form-horizontal" method='post' action='{{url('/admin', array('instructor', 'add_new_instructor'))}}'>
         <div class="col-md-12">
-            <div class="box box-primary">
+            <div class="box box-default">
                 <div class="box-header">
                     <h3 class="box-title"><b>Personal Information</b></h3>
                 </div>

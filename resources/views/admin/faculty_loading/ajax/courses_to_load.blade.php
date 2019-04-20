@@ -19,8 +19,8 @@ $color_array = ['info','danger','warning','success'];
 $ctr = 0;
 ?>
 
-<div class='box box-danger box-solid'>
-    <div class='box-header'><h5 class='box-title'>Courses to Load</h5></div>
+<div class='box box-default box-solid'>
+    <div class='box-header bg-navy-active'><h5 class='box-title'>Courses to Load</h5></div>
     <div class="box-body">
         <div class="col-sm-12">
             <input type="text" onkeyup="search(event,this.value,'{{$level}}')" class="form-control" placeholder="Enter the course code to search..">

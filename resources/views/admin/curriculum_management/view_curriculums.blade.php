@@ -59,7 +59,7 @@ $program = \App\academic_programs::where('program_code', $program_code)->first()
 <section class="content">
     <div class="row">
         <div class="col-sm-12" id="displaycurriculum">
-            <div class="box box-primary">
+            <div class="box box-default">
                 <div class="box-header">
                     <h3 class="box-title">{{$program->program_name}}</h3>
                     <div class="box-tools pull-right">

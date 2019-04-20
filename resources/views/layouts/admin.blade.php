@@ -29,7 +29,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="skin-red  sidebar-mini">
+<body class="skin-black-light  sidebar-mini">
 <div id="app">
     <div class="wrapper">
 
@@ -58,7 +58,9 @@ desired effect
 @section('scripts')
     @include('adminlte::layouts.partials.scripts')
 @show
+
 <script src="{{ asset('/plugins/select2/select2.js') }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{asset('/plugins/toastr/toastr.min.js')}}"></script>
 @yield('footer-script')
     <script>
 

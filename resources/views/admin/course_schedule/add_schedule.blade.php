@@ -51,8 +51,8 @@ if(Auth::user()->is_first_login == 1){
     
     <div class="row">
         <div class="col-sm-4">
-             <div class="box box-solid box-danger">
-                <div class="box-header">
+             <div class="box box-solid box-default">
+                <div class="box-header  bg-navy-active">
                     <h5 class="box-title">Inactive Schedules</h5>
                 </div>
                 <div class="box-body">
@@ -86,7 +86,7 @@ if(Auth::user()->is_first_login == 1){
             </div>
         </div>
         <div class="col-sm-8">
-            <div class="box box-danger">
+            <div class="box box-default">
                 <div class="box-header">
                     <h5 class="box-title">Schedule</h5>
                 </div>
@@ -141,7 +141,7 @@ if(Auth::user()->is_first_login == 1){
                         </div>
                     </div>
                 </div>
-                <div class="box-footer">
+                <div class="box-footer no-padding">
                     <div class="col-sm-12">
                         <div id="calendar"></div>
                     </div>
@@ -191,7 +191,7 @@ function addschedule(day,time_start,time_end){
             }
         })
     }else{
-        alert('Please Select Day!');
+        toastr.warning('Please select a day of the week!');
     }
 }
 
@@ -202,7 +202,8 @@ $('#calendar').fullCalendar({
     columnFormat: 'ddd',
     defaultView: 'agendaWeek',
     hiddenDays: [0],
-
+    minTime: '07:00:00',
+    maxTime: '22:00:00',
     header: false,
     //// uncomment this line to hide the all-day slot
     allDaySlot: false,

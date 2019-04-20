@@ -15,10 +15,8 @@ class CreateAcademicProgramsTable extends Migration
     {
         Schema::create('academic_programs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('academic_type');
-            $table->string('academic_code')->nullable();
-            $table->string('academic_name')->nullable();
-            $table->string('department');
+            $table->string('academic_type')->nullable();
+            $table->string('department')->nullable();
             $table->string('program_code')->nullable();
             $table->string('program_name')->nullable();
             $table->string('level')->nullable();

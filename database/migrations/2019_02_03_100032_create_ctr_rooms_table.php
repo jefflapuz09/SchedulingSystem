@@ -17,7 +17,7 @@ class CreateCtrRoomsTable extends Migration
             $table->increments('id');
             $table->string('room');
             $table->string('building');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->boolean('is_active')->default(1);
             $table->timestamps();
         });

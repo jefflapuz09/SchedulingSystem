@@ -3,9 +3,9 @@
             <!-- To the right -->
  <footer class="main-footer">    
     <div class="pull-right hidden-xs">
-            <strong>Created by <a></a>.</strong> <a>Capstone Project</a>
+            
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy;   <a href="">Global Reciprocal Colleges </a> 
+            <strong>Copyright &copy;   <a href="https://www.facebook.com/JheyV09">Lapuz, Jefferson </a> </strong>
 
         </div>   

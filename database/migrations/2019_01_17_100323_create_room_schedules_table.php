@@ -19,8 +19,8 @@ class CreateRoomSchedulesTable extends Migration
             $table->string('time_starts');
             $table->string('time_end');
             $table->string('room');
-            $table->integer('offering_id')->unsigned();
-            $table->integer('instructor')->unsigned();
+            $table->integer('offering_id')->unsigned()->nullable();
+            $table->integer('instructor')->unsigned()->nullable();
             $table->boolean('is_active')->default(1);
             $table->timestamps();
             $table->integer('is_loaded')->default(0);

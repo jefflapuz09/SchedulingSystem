@@ -7,8 +7,8 @@
         
 <section class="content">
     <div class='col-sm-4'>
-        <div class="box box-solid box-primary">
-           <div class="box-header with-border">
+        <div class="box box-solid box-default">
+           <div class="box-header bg-navy-active with-border">
              <h3 class="box-title">Change Password</h3>
              <div class="box-tools pull-right">
                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>

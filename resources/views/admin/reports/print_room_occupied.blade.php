@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="a">
-            <b>Glocal Reciprocal Colleges</b>
+            <b>Sample School</b>
              </div>
         <div class="b">
         

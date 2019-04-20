@@ -1,5 +1,5 @@
 @if(!$offerings->isEmpty())
-<div class="box box-danger">
+<div class="box box-default">
     <div class="box-header"><h5 class="box-title">Courses Offered</h5></div>
     <div class="box-body">
         <div class="table-responsive">
@@ -32,7 +32,7 @@
     </div>
 </div>
 @else
-<div class="box box-danger">
+<div class="box box-default">
     <div class="box-header"><h5 class="box-title">Courses Offered</h5></div>
     <div class="box-body">
         <div class="callout callout-warning">

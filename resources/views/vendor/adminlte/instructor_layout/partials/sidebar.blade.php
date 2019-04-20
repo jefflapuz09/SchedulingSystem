@@ -37,7 +37,7 @@
             <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MENU</li>
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-home '></i> <span>Home</span></a></li>
-            <li class="active"><a href="{{ url('/instructor/faculty_loading') }}"><i class='fa fa-calendar-check-o '></i> <span>Faculty Loading Assignment</span></a></li>
+            <li class=""><a href="{{ url('/instructor/faculty_loading') }}"><i class='fa fa-calendar-check-o '></i> <span>Faculty Loading Assignment</span></a></li>
             <li class=""><a href="{{ url('/account/change_password') }}"><i class='fa fa-lock '></i> <span>Change Password</span></a></li>
     </section>
     <!-- /.sidebar -->

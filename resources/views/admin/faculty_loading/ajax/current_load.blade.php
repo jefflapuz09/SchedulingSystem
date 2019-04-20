@@ -46,7 +46,7 @@ if(!$schedules->isEmpty()){
 
 ?>
 <?php $employee_type = \App\instructors_infos::where('instructor_id',$instructor)->first();?>
-<div class='box box-danger'>
+<div class='box box-default'>
      <div class="nav-tabs-custom">
         <ul class="nav nav-tabs pull-right">
           <li class="active"><a href="#tab_1-1" data-toggle="tab">Calendar View</a></li>

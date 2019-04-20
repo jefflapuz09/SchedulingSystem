@@ -57,16 +57,20 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
 </section>
 @endsection
 @section('main-content')
+<link rel="stylesheet" href="{{ asset ('plugins/toastr/toastr.css')}}">
 @if(Session::has('success'))
-<script type="text/javascript">
-    toastr.success(' <?php echo Session::get('success'); ?>', 'Message!');
-</script>
+<div class='col-sm-12'>
+    <div class='callout callout-success'>
+        {{Session::get('success')}}
+    </div>
+</div>
 @endif
+
 
 <section class="content">
     <div class="row">
         <div class="col-sm-12">
-            <div class="box box-primary">
+            <div class="box box-default">
                 <div class="box-header">
                     <h3 class="box-title">Academic Programs</h3>
                     <div class="box-tools pull-right">
@@ -189,7 +193,14 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
   </div>
 </div>
 @endsection
-@section('footerscript')
+@section('footer-script')
+
+@if(Session::has('success'))
+<script type="text/javascript">
+    toastr.success(' <?php echo Session::get('success'); ?>', 'Message!');
+</script>
+@endif
+
 <script>
 
 </script>

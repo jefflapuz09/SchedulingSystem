@@ -77,11 +77,11 @@
             body{background-color:#ff3300;}
         </style>
     </head>
-    <body class="hold-transition login-page" style="background:#990000;">
+    <body class="hold-transition login-page" style="background:#252525;">
         <div class="container-fluid header">    
             <div class="col-md-1 pull-left"><img class="image img-responsive logo" src="http://scheduling.local/images/grc.jpg"></div>
-            <div class="col-md-8"><span class="schoolname">Global Reciprocal Colleges</span> <br> 454 GRC Bldg., Rizal Avenue Ext., corner <br>  9th Avenue Grace Park
-                 Caloocan, Philippines.</div>
+            <div class="col-md-8"><span class="schoolname">Sample University</span> <br> Sample School Address
+                 <br>Manila, Philippines.</div>
             <div class="col-md-3 sis"><span id="sisname">Scheduling System</span></div>
         </div>
         <div class="login-box">
@@ -146,14 +146,14 @@
 
             <!-- To the right -->
             <div class="pull-right hidden-xs">
-                <strong>Created by <a></a>.</strong> <a>Capstone Project</a>
+                
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy;   <a href="">Global Reciprocal Colleges </a>
+            <strong>Copyright &copy;   <a href="https://www.facebook.com/JheyV09">Lapuz, Jefferson </a>
         </div>  
     <script>
         $(function () {
-            $('input').iCheck({
+            $('input').iCheck({ 
                 checkboxClass: 'icheckbox_square-blue',
                 radioClass: 'iradio_square-blue',
                 increaseArea: '20%' // optional

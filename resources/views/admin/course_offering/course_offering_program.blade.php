@@ -36,8 +36,8 @@ if(Auth::user()->is_first_login == 1){
 <div class="container-fluid" style="margin-top: 15px;">
     <div class="row">
         <div class="col-sm-5">
-            <div class="box box-solid box-danger">
-                <div class="box-header">
+            <div class="box box-solid box-default">
+                <div class="box-header bg-navy-active">
                     <h5 class="box-title">{{$program->program_name}}</h5>
                 </div>
                 <div class="box-body">
@@ -58,7 +58,7 @@ if(Auth::user()->is_first_login == 1){
             </div>
         </div>
         <div class="col-sm-7">
-            <div class="box box-danger" id="displaysearchcourse">
+            <div class="box box-default" id="displaysearchcourse">
                 <div class="box-header">
                     <h5 class="box-title">Search Course</h5>
                 </div>

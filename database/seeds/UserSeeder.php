@@ -12,9 +12,9 @@ class UserSeeder extends Seeder
     public function run()
     {
         \App\User::create([
-           'username' => 'GRCadmin',
+           'username' => 'superadmin',
            'name' => 'Super',
-           'middlename' => 'GRC',
+           'middlename' => ' ',
            'lastname' => 'Admin',
            'accesslevel' => 100,
            'email' => 'superadmin@gmail.com',
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         \App\User::create([
            'username' => 'admin',
            'name' => 'Admin',
-           'middlename' => 'GRC',
+           'middlename' => ' ',
            'lastname' => 'Admin',
            'accesslevel' => 0,
            'email' => 'admin@gmail.com',

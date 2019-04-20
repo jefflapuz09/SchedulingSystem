@@ -19,7 +19,7 @@ if(Auth::user()->accesslevel == 100){
         
 <section class="content">
     <div class='col-sm-4'>
-        <div class="box box-solid box-primary">
+        <div class="box box-solid box-default">
            <div class="box-header with-border">
              <h3 class="box-title">Change Password</h3>
              <div class="box-tools pull-right">

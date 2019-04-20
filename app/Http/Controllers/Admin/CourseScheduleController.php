@@ -24,7 +24,6 @@ class CourseScheduleController extends Controller
     }
     
     function add_schedule($offering_id,$section_name){
-        
             $offering = \App\offerings_infos_table::find($offering_id);
             $curricula = \App\curriculum::find($offering->curriculum_id);
             $inactive = \App\room_schedules::where('is_active',0)->get();

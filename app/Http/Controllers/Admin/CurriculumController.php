@@ -63,7 +63,6 @@ class CurriculumController extends Controller {
        
             
             $curricula = new \App\curriculum;
-            $curricula->type_of_period = 'Trimester';
             $curricula->curriculum_year = $request->curriculum_year;
             $curricula->program_code = $request->program_code;
             $curricula->program_name = \App\academic_programs::where('program_code',$request->program_code)->first()->program_name;
@@ -73,9 +72,6 @@ class CurriculumController extends Controller {
             $curricula->lec = $request->lec;
             $curricula->lab = $request->lab;
             $curricula->units = $request->units;
-            $curricula->display_lec = $request->lec;
-            $curricula->display_lab = $request->lab;
-            $curricula->display_units = $request->units;
             $curricula->level = $request->level;
             $curricula->period = $request->period;
             $curricula->percent_tuition = 100;

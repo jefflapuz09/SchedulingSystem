@@ -1,5 +1,5 @@
 @if(!$courses->isEmpty())
-<div class="box box-danger">
+<div class="box box-default">
     <div class='box-header'>
         <h5 class='box-title'>Courses Offered</h5>
     </div>
@@ -50,7 +50,7 @@
     </div>
 </div>
 @else
-<div class="box box-danger">
+<div class="box box-default">
     <div class='box-header'>
         <h5 class='box-title'>Courses Offered</h5>
     </div>

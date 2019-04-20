@@ -18,7 +18,7 @@ class AddCurriculumController extends Controller
           return view('/admin/curriculum_management/add_curriculum');
                 
         }
-            function upload_backup2(Request $request){
+    function upload_backup2(Request $request){
         if(Auth::user()->accesslevel == env('REG_COLLEGE')){
             $row = 2;
             $path = Input::file('import_file')->getRealPath();
@@ -63,7 +63,6 @@ class AddCurriculumController extends Controller
             for($x=0;$x<=count($request->curriculum_year);$x++){
                 if(array_key_exists($x, $request->curriculum_year)){
                     $curricula = new \App\curriculum;
-                    $curricula->type_of_period = 'Trimester';
                     $curricula->curriculum_year = $request->curriculum_year[$x];
                     $curricula->program_code = $request->program_code[$x];
                     $curricula->program_name = \App\CtrAcademicProgram::where('program_code',$request->program_code[$x])->first()->program_name;
@@ -73,9 +72,6 @@ class AddCurriculumController extends Controller
                     $curricula->lec = $request->lec[$x];
                     $curricula->lab = $request->lab[$x];
                     $curricula->units = $request->units[$x];
-                    $curricula->display_lec = $request->lec[$x];
-                    $curricula->display_lab = $request->lab[$x];
-                    $curricula->display_units = $request->units[$x];
                     $curricula->level = $request->level[$x];
                     $curricula->period = $request->period[$x];
                     $curricula->percent_tuition = 100;

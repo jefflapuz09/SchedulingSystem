@@ -58,7 +58,7 @@ if(Auth::user()->is_first_login == 1){
 <link rel='stylesheet' href='{{asset('plugins/datatables/dataTables.bootstrap.css')}}'>
 <section class="content">
     <div class="container-fluid">
-        <div class="box box-danger">
+        <div class="box box-default">
             <div class="box-header"><h5 class="box-title">List of Instructors</h5></div>
                 <div class="box-body">
                     <div class="table-responsive">

@@ -126,6 +126,7 @@ $levels = \App\curriculum::distinct()->where('program_code', $program_code)->whe
                             @endforeach
                             <tr>
                                 <td></td>
+                                <td></td>
                                 <th><div align='right'>Total</div> </th>
                                 <th><?php echo $totalLec; ?></th>
                                 <th><?php echo $totalLab; ?></th>

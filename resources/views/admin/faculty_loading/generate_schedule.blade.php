@@ -132,7 +132,7 @@ $info = \App\instructors_infos::where('instructor_id' ,$instructor)->first();
      </div>-->
 <div id="header" style="position: absolute; top:350; right:0px;">
 <div class="a">
-    <b>Glocal Reciprocal Colleges</b>
+    <b>Sample University</b>
      </div>
 <div class="b">
 <!--         <b> {{$faculty->lastname}}, {{$faculty->name}} </b>-->

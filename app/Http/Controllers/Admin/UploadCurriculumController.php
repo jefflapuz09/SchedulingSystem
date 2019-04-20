@@ -70,7 +70,6 @@ class UploadCurriculumController extends Controller
             for($x=0;$x<=count($request->curriculum_year);$x++){
                 if(array_key_exists($x, $request->curriculum_year)){
                     $curricula = new \App\curriculum;
-                    $curricula->type_of_period = 'Semeter';
                     $curricula->curriculum_year = $request->curriculum_year[$x];
                     $curricula->program_code = $request->program_code[$x];
                     $curricula->program_name = \App\academic_programs::where('program_code',$request->program_code[$x])->first()->program_name;
@@ -80,9 +79,6 @@ class UploadCurriculumController extends Controller
                     $curricula->lec = $request->lec[$x];
                     $curricula->lab = $request->lab[$x];
                     $curricula->units = $request->units[$x];
-                    $curricula->display_lec = $request->lec[$x];
-                    $curricula->display_lab = $request->lab[$x];
-                    $curricula->display_units = $request->units[$x];
                     $curricula->level = $request->level[$x];
                     $curricula->period = $request->period[$x];
                     $curricula->percent_tuition = 100;

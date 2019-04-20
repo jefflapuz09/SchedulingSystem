@@ -39,7 +39,7 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
 </section>
 <section class="content container-fluid">
                     
-    <div class="box box-primary">
+    <div class="box box-default">
         <form action="{{url('admin/curriculum_management/upload/save_changes')}}" method="post">
         {{csrf_field()}}
         <div class="box-header"><i ></i>
@@ -119,11 +119,12 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
 
 @section('footer-script')
 <script src='{{asset('plugins/select2/select2.js')}}'></script>
+<script></script>
 <script>
    var no = 1;
     $('.add').on('click',function(e){
     if($("#c_year"+no).val()=="" || $("#code" + no).val()=="" || $("#name" + no).val()=="" || $("#lec" + no).val()=="" || $("#lab" + no).val()=="" || $("#units" + no).val()==""){
-        alert("Please Fill-up Required Fields ");
+        toastr.warning("Please Fill-up Required Fields ");
     }else{
         no++;
         $('#dynamic_field').append("<tr id='row"+no+"'>\n\
@@ -137,7 +138,7 @@ $programs = \App\academic_programs::distinct()->orderBy('program_code')->get(arr
                 <td><input type='text' class='form-control' name='lec[]' id='lec"+no+"'></td>\n\
                 <td><input type='text' class='form-control' name='lab[]' id='lab"+no+"'></td>\n\
                 <td><input type='text' class='form-control' name='units[]' id='units"+no+"'></td>\n\
-                <td align="center"><select class='form-control' id='complab"+no+"' name='complab[]'><option value='0'>No</option><option value='1'>Yes</option></select></td>\n\
+                <td align='center'><select class='form-control' id='complab"+no+"' name='complab[]'><option value='0'>No</option><option value='1'>Yes</option></select></td>\n\
             </tr>");
     }
     e.preventDefault();
@@ -152,9 +153,6 @@ $('#dynamic_field').on('click','.remove', function(e    ){
     return false;
 }); 
 
-function submit(){
-    
-}
 </script>
 @endsection
 

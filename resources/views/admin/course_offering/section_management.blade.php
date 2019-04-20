@@ -50,8 +50,8 @@ if(Auth::user()->is_first_login == 1){
     
     <div class='row'>
         <div class='col-sm-5'>
-            <div class='box box-solid box-danger'>
-                <div class='box-header'>
+            <div class='box box-solid box-default'>
+                <div class='box-header bg-navy-active'>
                     <h5 class="box-title">New Section</h5>
                 </div>
                 <div class='box-body'>
@@ -89,7 +89,7 @@ if(Auth::user()->is_first_login == 1){
             </div>
         </div>
         <div class='col-sm-7'>
-            <div class="box box-primary">
+            <div class="box box-default">
                 <div class="box-header">
                     <h5 class="box-title">List of Created Sections</h5>
                     <div class="box-tools pull-right">
